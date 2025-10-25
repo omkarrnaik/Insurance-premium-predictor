@@ -1,0 +1,99 @@
+Data Science Life Cycle
+
+1. Problem Definition and Business Understanding
+
+Goals:
+- Understand what problem you are solving.
+- Define project objectives, success metrics, and business impact.
+
+Steps:
+- Meet with stakeholders or domain experts.
+- Define the business question (e.g., Can we predict customer churn?).
+- Translate it into a data science problem (e.g., classification task).
+- Define KPIs (Key Performance Indicators) and evaluation metrics.
+- Define scope, constraints, and deliverables.
+
+2. Data Collection
+Steps:
+- Identify data sources: databases (SQL), APIs, web scraping, sensors, logs, CSV/Excel files, public datasets (Kaggle, UCI, etc.).
+- Collect both internal (company data) and external data.
+- Store in a data warehouse or data lake.
+- Ensure data privacy and ethical compliance (GDPR, etc.).
+
+3. Data Cleaning (Data Preprocessing)
+Steps:
+- Handle missing values (mean, median, mode, KNN imputer).
+- Remove duplicates.
+- Detect and treat outliers.
+- Handle inconsistent formats (date, category names).
+- Correct data types (convert strings to datetime, etc.).
+- Standardize and normalize data.
+- Perform text cleaning if working on NLP.
+
+4. Exploratory Data Analysis (EDA)
+Steps:
+- Understand feature distributions (histograms, boxplots).
+- Find correlations between variables.
+- Use pair plots, heatmaps, and scatter plots.
+- Identify patterns, trends, and anomalies.
+- Perform feature selection to identify important features.
+- Summarize key insights from data for storytelling.
+
+5. Feature Engineering
+Steps:
+- Create new features (e.g., Age = CurrentYear - BirthYear).
+- Encode categorical variables (Label Encoding, One-Hot Encoding).
+- Scale numeric features (StandardScaler, MinMaxScaler).
+- Handle skewed data (log transform, Box-Cox).
+- Perform feature selection using correlation, mutual info, or feature importance.
+- Apply dimensionality reduction techniques like PCA or LDA.
+
+6. Model Building
+Steps:
+- Split dataset into train, validation, and test sets.
+- Choose algorithms based on problem type:
+   Regression: Linear Regression, Random Forest, XGBoost
+   Classification: Logistic Regression, SVM, Decision Tree
+   Clustering: KMeans, DBSCAN
+   Deep Learning: CNN, RNN, Transformers
+- Train multiple models.
+- Perform cross-validation to ensure generalization.
+- Record all results systematically.
+
+7. Model Evaluation
+Steps:
+- Use appropriate metrics:
+  Regression: MAE, RMSE, R2
+  Classification: Accuracy, Precision, Recall, F1, AUC-ROC
+  Clustering: Silhouette Score
+- Check for overfitting or underfitting by comparing train and test scores.
+- Perform error analysis to identify weak areas.
+- Fine-tune models using GridSearchCV or RandomizedSearchCV.
+
+8. Model Deployment
+Steps:
+- Save the model using pickle or joblib.
+- Build an API using Flask, FastAPI, or Django.
+- Create a frontend interface using HTML, React, or Streamlit.
+- Dockerize the project for containerization.
+- Deploy on cloud platforms such as AWS, GCP, Azure, or Render.
+- Monitor model performance post-deployment.
+
+9. Model Monitoring and Maintenance
+Steps:
+- Track data drift and concept drift.
+- Collect feedback and retrain with new data.
+- Implement logging and alerting for failures.
+- Schedule periodic retraining pipelines.
+- Use MLOps tools like MLflow, Airflow, or Kubeflow.
+
+10. Communication and Visualization
+Steps:
+- Build interactive dashboards using Power BI, Tableau, or Streamlit.
+- Summarize findings with clear data stories.
+- Present model performance and business impact.
+- Use clear visuals such as bar charts, trend graphs, and heatmaps.
+- Prepare project documentation and final reports.
+
+Summary Flow:
+Problem Understanding → Data Collection → Data Cleaning → EDA → Feature Engineering → Model Building → Model Evaluation → Deployment → Monitoring → Communication
